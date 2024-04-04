@@ -44,7 +44,12 @@ void LinearSearch() {
             cout << "\n" << item << "found at pisition" << (i + 1) << endl;    //Step 6
             break;
         }
+        i++;        // Step 4
     }
+
+    if (i == n)     //Step 5
+        cout << "\n" << item << "not found in the array\n";
+    
 }
 
 int main()
