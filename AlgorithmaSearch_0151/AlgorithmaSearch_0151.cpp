@@ -63,7 +63,9 @@ void display() {
         cout << arr[i] << " ";
     cout << endl;
 }
-int main()
-{
-    std::cout << "Hello World!\n";
+
+int main() {
+    input();
+    LinearSearch();
+    display();
 }
