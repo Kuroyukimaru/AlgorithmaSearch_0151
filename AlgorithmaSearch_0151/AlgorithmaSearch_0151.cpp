@@ -57,6 +57,9 @@ void LinearSearch() {
     } while ((ch == 'y') || (ch == 'y'));
 }
 
+void display() {
+
+}
 int main()
 {
     std::cout << "Hello World!\n";
