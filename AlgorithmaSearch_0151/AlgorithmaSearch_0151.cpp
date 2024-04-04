@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int arr[20];        // Array to be searched
-int n;              // Number od element in the array
-int i;              //  Index of array element
+int arr[20];                                                                             // Array to be searched
+int n;                                                                                   // Number od element in the array
+int i;                                                                                   //  Index of array element
 
 void input() {
     while (true) {
@@ -28,33 +28,33 @@ void input() {
 
 void LinearSearch() {
     char ch;
-    int ctr;            // Number of comparisions
+    int ctr;                                                                         // Number of comparisions
     int item;
 
     do {
 
         // Accept the number to be  searched
-        cout << "\nEnter the  element you want to search :";    // Step 1
+        cout << "\nEnter the  element you want to search :";                         // Step 1
         cin >> item;
 
         ctr = 0;
-        i = 0;      // Step 2
+        i = 0;                                                                      // Step 2
 
-        while (i < n) {             // Step 3
+        while (i < n) {                                                            // Step 3
             ctr++;
             if (arr[i] == item) {
                 cout << "\n" << item << "found at pisition" << (i + 1) << endl;    //Step 6
                 break;
             }
-            i++;        // Step 4
+            i++;                                                                  // Step 4
         }
 
-        if (i == n)     //Step 5
+        if (i == n)                                                               //Step 5
             cout << "\n" << item << "not found in the array\n";
         cout << "\nNumber of comparisons :" << ctr << endl;
         cout << "\nContinue search (y/n) :";
         cin >> ch;
-    } while ((ch == 'y') || (ch == 'y'));
+    } while ((ch == 'y') || (ch == 'Y'));
 }
 
 void display() {
